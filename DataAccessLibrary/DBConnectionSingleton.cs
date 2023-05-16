@@ -17,17 +17,20 @@ namespace DataAccessLibrary
         private DBConnectionSingleton()
         {
         }
+
+        
         public static MySqlConnection GetInstance()
         {
             try
             {
                 if (conn == null)
                 {
+                    // TODO: Find a way to fix App.config reading
                     SqlConnectionStringBuilder consStringBuilder = new SqlConnectionStringBuilder();
-                    consStringBuilder.UserID = ReadSetting("Name");
-                    consStringBuilder.Password = ReadSetting("Password");
-                    consStringBuilder.InitialCatalog = ReadSetting("Database");
-                    consStringBuilder.DataSource = ReadSetting("DataSource");
+                    consStringBuilder.UserID = "ppraxe";
+                    consStringBuilder.Password = "Ppraxe+01";
+                    consStringBuilder.InitialCatalog = "praxedb";
+                    consStringBuilder.DataSource = "93.99.225.235";
                     consStringBuilder.ConnectTimeout = 10;
                     conn = new MySqlConnection(consStringBuilder.ConnectionString);
                     conn.Open();
@@ -43,7 +46,6 @@ namespace DataAccessLibrary
         {
             var appSettings = ConfigurationManager.AppSettings;
             string result = appSettings[key] ?? "Not Found";
-            Console.WriteLine(result);
             return result;
         }
     }
