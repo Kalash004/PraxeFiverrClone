@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uuc9n6GDZ2Pz9zIQU00m6k7uBySHvj0zYIsc/ywSoAPUJ8SkDRbuf/5kanH/Y7X0sqTxve9+l+Qdmesz7weVpA==",
+  "dgSpecHash": "NbstZsa0UssMEPC/R8YzK+p7hE1dx6RrRwDYn7INObFI5whaJkiUaH3zuEgd06LPjCu1q3OTcZ5Bt1EZ094Xvg==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\C#\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Praxe\\source\\repos\\Kalash004\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Praxe\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512"
+  ],
   "logs": []
 }

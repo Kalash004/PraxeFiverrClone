@@ -1,0 +1,10 @@
+.wrapper[b-skp8u4pu27] {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: #F1F6F9;
+    background-color: #394867;
+    padding: 10px 100px 10px 100px;
+    min-height: calc(100vh - 60px - 35px);
+}

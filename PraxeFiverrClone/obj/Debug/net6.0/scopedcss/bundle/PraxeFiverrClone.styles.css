@@ -1,0 +1,89 @@
+/* _content/PraxeFiverrClone/Shared/Footer.razor.rz.scp.css */
+.footer[b-kwhb3n0c0g] {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #212A3E;
+
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+
+    z-index: 9999;
+}
+.footer p[b-kwhb3n0c0g]{
+    color: white;
+    margin: 0;
+    overflow: clip;
+}
+/* _content/PraxeFiverrClone/Shared/Header.razor.rz.scp.css */
+.header[b-voxgjw91i9] {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #212A3E;
+    width: 100%;
+    height: 60px;
+    padding: 5px 20px 5px 20px;
+    z-index: 9999;
+}
+.header .navigation[b-voxgjw91i9]{
+    display:flex;
+    margin-left: auto;
+    width: auto;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.header .logo[b-voxgjw91i9] {
+    height: auto;
+    width: 100px;
+    background-image: url("../Images/Fiverr.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header-space[b-voxgjw91i9]{
+    display: flex;
+    min-height: 60px;
+    width: auto;
+}
+.header a[b-voxgjw91i9] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+    padding: 5px 15px 5px 15px;
+    border-radius: 4px;
+}
+.header .header-register[b-voxgjw91i9]{
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 2px;
+    transition: background-color, color  0.2s;
+}
+.header .header-register:hover[b-voxgjw91i9]{
+     background-color: white;
+     color: black;
+}
+    .header .header-register:active[b-voxgjw91i9] {
+        background-color: white;
+        color: black;
+    }
+/* _content/PraxeFiverrClone/Shared/MainLayout.razor.rz.scp.css */
+.wrapper[b-skp8u4pu27] {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    color: #F1F6F9;
+    background-color: #394867;
+    padding: 10px 100px 10px 100px;
+    min-height: calc(100vh - 60px - 35px);
+}
