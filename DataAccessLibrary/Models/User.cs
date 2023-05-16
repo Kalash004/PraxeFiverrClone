@@ -16,6 +16,13 @@ namespace DataAccessLibrary.Models
         private string hashedPassword;
         private int currentCredits;
 
+        public User(string name, string hashedPassword, int currentCredits)
+        {
+            this.name = name;
+            this.hashedPassword = hashedPassword;
+            this.currentCredits = currentCredits;
+        }
+
         public User(int iD, string name, string hashedPassword, int currentCredits)
         {
             ID = iD;

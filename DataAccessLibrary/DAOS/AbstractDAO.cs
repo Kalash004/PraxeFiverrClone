@@ -7,6 +7,7 @@ using System.Xml.Linq;
 using System.Data.SqlClient;
 using System.Data;
 using DataAccessLibrary.Interfaces;
+using MySql.Data.MySqlClient;
 
 namespace DataAccessLibrary.DAOS
 {
@@ -14,8 +15,7 @@ namespace DataAccessLibrary.DAOS
     {
         public void Update(String SQL, T obj, int id)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
+            MySqlConnection? conn = null;
             try
             {
                 conn = DBConnectionSingleton.GetInstance();
@@ -23,14 +23,15 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
+                    command.CommandText = SQL;
                     var parameters = Map(obj);
                     foreach (var param in parameters)
                     {
                         command.Parameters.Add(param);
                     }
-                    command.Parameters.Add(new SqlParameter("@id", id));
+                    command.Parameters.Add(new MySqlParameter("@id", id));
                     command.ExecuteNonQuery();
                 }
             }
@@ -56,8 +57,7 @@ namespace DataAccessLibrary.DAOS
 
         public int Create(String SQL, T obj)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
+            MySqlConnection? conn = null;
             try
             {
                 conn = DBConnectionSingleton.GetInstance();
@@ -65,8 +65,9 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
+                    command.CommandText = SQL;
                     var parameters = Map(obj);
                     foreach (var param in parameters)
                     {
@@ -99,8 +100,7 @@ namespace DataAccessLibrary.DAOS
 
         public void Delete(String SQL, int id)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
+            MySqlConnection? conn = null;
             try
             {
                 conn = DBConnectionSingleton.GetInstance();
@@ -108,9 +108,10 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
-                    command.Parameters.Add(new SqlParameter("@id", id));
+                    command.CommandText = SQL;
+                    command.Parameters.Add(new MySqlParameter("@id", id));
                     command.ExecuteNonQuery();
                 }
             }
@@ -136,9 +137,8 @@ namespace DataAccessLibrary.DAOS
 
         public List<T> GetAll(String SQL)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
-            SqlDataReader? reader = null;
+            MySqlConnection? conn = null;
+            MySqlDataReader? reader = null;
             List<T> list = new List<T>();
             try
             {
@@ -147,8 +147,9 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
+                    command.CommandText = SQL;
                     reader = command.ExecuteReader();
                     while (reader.Read())
                     {
@@ -182,11 +183,10 @@ namespace DataAccessLibrary.DAOS
             return list;
         }
 
-        public List<T> Get(String SQL, List<SqlParameter> parameters)
+        public List<T> Get(String SQL, List<MySqlParameter> parameters)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
-            SqlDataReader? reader = null;
+            MySqlConnection? conn = null;
+            MySqlDataReader? reader = null;
             List<T> list = new List<T>();
             try
             {
@@ -195,8 +195,9 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
+                    command.CommandText = SQL;
                     foreach (var param in parameters)
                     {
                         command.Parameters.Add(param);
@@ -236,9 +237,8 @@ namespace DataAccessLibrary.DAOS
 
         public T? GetByID(String SQL, int id)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
-            SqlDataReader? reader = null;
+            MySqlConnection? conn = null;
+            MySqlDataReader? reader = null;
             try
             {
                 conn = DBConnectionSingleton.GetInstance();
@@ -246,9 +246,10 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
-                    command.Parameters.Add(new SqlParameter("@id", id));
+                    command.CommandText = SQL;
+                    command.Parameters.Add(new MySqlParameter("@id", id));
                     reader = command.ExecuteReader();
                     while (reader.Read())
                     {
@@ -284,9 +285,8 @@ namespace DataAccessLibrary.DAOS
 
         public List<T> GetByConnectingID(String SQL, int id, String tag)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
-            SqlDataReader? reader = null;
+            MySqlConnection? conn = null;
+            MySqlDataReader? reader = null;
             List<T> list = new List<T>();
             try
             {
@@ -295,9 +295,10 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
-                    command.Parameters.Add(new SqlParameter(tag, id));
+                    command.CommandText = SQL;
+                    command.Parameters.Add(new MySqlParameter(tag, id));
                     reader = command.ExecuteReader();
                     while (reader.Read())
                     {
@@ -332,9 +333,8 @@ namespace DataAccessLibrary.DAOS
         }
         public T GetByName(String SQL,string parameter_name ,string name)
         {
-            SqlConnection? conn = null;
-            SqlCommand command;
-            SqlDataReader? reader = null;
+            MySqlConnection? conn = null;
+            MySqlDataReader? reader = null;
             try
             {
                 conn = DBConnectionSingleton.GetInstance();
@@ -342,9 +342,10 @@ namespace DataAccessLibrary.DAOS
                 {
                     conn.Open();
                 }
-                using (command = new SqlCommand(SQL, conn))
+                using (var command = conn.CreateCommand())
                 {
-                    command.Parameters.Add(new SqlParameter(parameter_name, name));
+                      command.CommandText = SQL;
+                    command.Parameters.Add(new MySqlParameter(parameter_name, name));
                     reader = command.ExecuteReader();
                     while (reader.Read())
                     {
@@ -379,9 +380,9 @@ namespace DataAccessLibrary.DAOS
         }
 
 
-        protected abstract T Map(SqlDataReader reader);
+        protected abstract T Map(MySqlDataReader reader);
 
-        protected abstract List<SqlParameter> Map(T obj);
+        protected abstract List<MySqlParameter> Map(T obj);
     }
 
 }

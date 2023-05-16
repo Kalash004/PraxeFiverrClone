@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace DataAccessLibrary
 {
     public class DBConnectionSingleton
     {
         private static DBConnectionSingleton instance = new DBConnectionSingleton();
-        private static SqlConnection? conn = null;
+        private static MySqlConnection? conn = null;
         private DBConnectionSingleton()
         {
         }
-        public static SqlConnection GetInstance()
+        public static MySqlConnection GetInstance()
         {
             try
             {
@@ -27,8 +28,8 @@ namespace DataAccessLibrary
                     consStringBuilder.Password = ReadSetting("Password");
                     consStringBuilder.InitialCatalog = ReadSetting("Database");
                     consStringBuilder.DataSource = ReadSetting("DataSource");
-                    consStringBuilder.ConnectTimeout = 30;
-                    conn = new SqlConnection(consStringBuilder.ConnectionString);
+                    consStringBuilder.ConnectTimeout = 10;
+                    conn = new MySqlConnection(consStringBuilder.ConnectionString);
                     conn.Open();
                 }
             }
@@ -42,6 +43,7 @@ namespace DataAccessLibrary
         {
             var appSettings = ConfigurationManager.AppSettings;
             string result = appSettings[key] ?? "Not Found";
+            Console.WriteLine(result);
             return result;
         }
     }

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccessLibrary.Interfaces;
 using DataAccessLibrary.Models;
+using MySql.Data.MySqlClient;
 
 namespace DataAccessLibrary.DAOS
 {
@@ -54,7 +55,7 @@ namespace DataAccessLibrary.DAOS
             return GetByName(element.Name);
         }
 
-        protected override User Map(SqlDataReader reader)
+        protected override User Map(MySqlDataReader reader)
         {
             return new User(
                 Convert.ToInt32(reader[0].ToString()),
@@ -64,13 +65,13 @@ namespace DataAccessLibrary.DAOS
             );
         }
 
-        protected override List<SqlParameter> Map(User obj)
+        protected override List<MySqlParameter> Map(User obj)
         {
-            return new List<SqlParameter>()
+            return new List<MySqlParameter>()
             {
-                new SqlParameter("@name",obj.Name),
-                new SqlParameter("@hashedPassword",obj.HashedPassword),
-                new SqlParameter("@current_credits",obj.CurrentCredits)
+                new MySqlParameter("@name",obj.Name),
+                new MySqlParameter("@hashedPassword",obj.HashedPassword),
+                new MySqlParameter("@current_credits",obj.CurrentCredits)
             };
         }
     }

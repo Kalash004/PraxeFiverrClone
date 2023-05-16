@@ -8,7 +8,7 @@ using DataAccessLibrary.Models;
 
 namespace DataAccessLibrary
 {
-    internal class DBManager
+    public class DBManager
     {
         UsersDAO usersDAO = new UsersDAO();
 
@@ -20,6 +20,16 @@ namespace DataAccessLibrary
             } 
             usersDAO.Create(user);
         }
+
+        public User GetUserByName(string name)
+        {
+            User returned = usersDAO.GetByName(name);
+            return returned;
+        }
         
+        public void RemoveUser(User user)
+        {
+            usersDAO.Delete(user.ID);
+        }
     }
 }
