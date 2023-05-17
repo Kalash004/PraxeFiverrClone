@@ -1,0 +1,13 @@
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.dll.config
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.deps.json
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.dll
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\bin\Debug\net6.0\DataAccessLibrary.pdb
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.AssemblyReference.cache
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfoInputs.cache
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.AssemblyInfo.cs
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.dll
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\refint\DataAccessLibrary.dll
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\DataAccessLibrary.pdb
+D:\Documents\C#\PraxeFiverrClone\DataAccessLibrary\obj\Debug\net6.0\ref\DataAccessLibrary.dll
