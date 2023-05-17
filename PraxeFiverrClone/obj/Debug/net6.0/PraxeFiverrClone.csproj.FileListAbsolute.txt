@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\appsettings.Development.json
 D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\appsettings.json
 D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.staticwebassets.runtime.json
@@ -25,3 +26,37 @@ D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\refint\PraxeF
 D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.pdb
 D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.genruntimeconfig.cache
 D:\Documents\C#\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\ref\PraxeFiverrClone.dll
+=======
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\appsettings.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.staticwebassets.runtime.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.exe
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.deps.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.runtimeconfig.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.dll
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\bin\Debug\net6.0\PraxeFiverrClone.pdb
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.csproj.AssemblyReference.cache
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.AssemblyInfoInputs.cache
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.AssemblyInfo.cs
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.csproj.CoreCompileInputs.cache
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.RazorAssemblyInfo.cache
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.RazorAssemblyInfo.cs
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets\msbuild.PraxeFiverrClone.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets\msbuild.build.PraxeFiverrClone.props
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PraxeFiverrClone.props
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PraxeFiverrClone.props
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\scopedcss\bundle\PraxeFiverrClone.styles.css
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\scopedcss\projectbundle\PraxeFiverrClone.bundle.scp.css
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.dll
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\refint\PraxeFiverrClone.dll
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.pdb
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\PraxeFiverrClone.genruntimeconfig.cache
+C:\Users\maxta\Source\Repos\PraxeFiverrClone\PraxeFiverrClone\obj\Debug\net6.0\ref\PraxeFiverrClone.dll
+>>>>>>> cec3e3e279b7d4ded209e4c617cbb66f1342ac1a
