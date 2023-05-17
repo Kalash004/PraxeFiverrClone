@@ -1,4 +1,16 @@
-﻿<div class="header">
+﻿<div class="mobile-navigation @GetMenuClass()">
+    <a href="/">
+        Home
+    </a>
+    <a href="/">
+        Sign in
+    </a>
+    <a href="/" class="header-register">
+        Register
+    </a>
+</div>
+
+<div class="header">
 
     <a class="logo" href="/"></a>
 
@@ -13,6 +25,26 @@
             Register
         </a>
     </div>
- 
+
+    <button class="hamburger @GetMenuClass()" @onclick="ToggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
 </div>
 <div class="header-space"></div>
+
+@code{
+    private bool mobileMenu { get; set; }
+
+    private void ToggleMenu()
+    {
+        mobileMenu = !mobileMenu;
+    }
+
+    private string GetMenuClass()
+    {
+        return mobileMenu ? "menu-shown" : "";
+    }
+}
