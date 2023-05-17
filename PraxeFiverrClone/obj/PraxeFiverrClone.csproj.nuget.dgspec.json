@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\C#\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj": {}
+    "C:\\Users\\maxta\\source\\repos\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\C#\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj": {
+    "C:\\Users\\maxta\\source\\repos\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\C#\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj",
+        "projectUniqueName": "C:\\Users\\maxta\\source\\repos\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj",
         "projectName": "PraxeFiverrClone",
-        "projectPath": "D:\\Documents\\C#\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj",
-        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\C#\\PraxeFiverrClone\\PraxeFiverrClone\\obj\\",
+        "projectPath": "C:\\Users\\maxta\\source\\repos\\PraxeFiverrClone\\PraxeFiverrClone\\PraxeFiverrClone.csproj",
+        "packagesPath": "C:\\Users\\maxta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maxta\\source\\repos\\PraxeFiverrClone\\PraxeFiverrClone\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

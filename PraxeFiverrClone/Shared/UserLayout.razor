@@ -1,0 +1,63 @@
+﻿
+<style>
+    .block{
+        background-color: darkgray;
+        margin-right: 5Vw;
+    }
+
+    #name {
+        margin-left: 5Vw;
+        font-size: 5Vh;
+    }
+
+    #smallText {
+        margin-left: 5Vw;
+        font-size: 3Vh;
+    }
+
+</style>
+
+
+<div class="block" >
+
+    <p id="name" >Name</p>
+    <br>
+</div>
+    <br>
+    <p id = "smalltext">your servises:</p>
+<div class="block">
+    <div>
+        
+        @foreach(Service s in services)
+        {
+            string n = s.name;
+
+            <ServisPreviewLayout />
+        }
+            
+    </div>
+</div>
+
+@code {
+
+
+    public List<Service> services = new List<Service>();
+
+    public void AddServis(String name)
+    {
+        services.Add(new Service(name));
+    }
+    protected override void OnInitialized()
+    {
+        AddServis("doers");
+        AddServis("diggers");
+        AddServis("miners");
+
+    }
+
+    
+    
+}
+
+
+
