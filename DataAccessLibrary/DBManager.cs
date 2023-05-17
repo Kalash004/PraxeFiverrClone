@@ -10,26 +10,7 @@ namespace DataAccessLibrary
 {
     public class DBManager
     {
-        UsersDAO usersDAO = new UsersDAO();
+        private DBUserManager userManager = new DBUserManager();
 
-        public void SingUpUser(User user)
-        {
-            if (usersDAO.GetByName(user) != null)
-            {
-                throw new Exception("User name already exists in database");
-            } 
-            usersDAO.Create(user);
-        }
-
-        public User GetUserByName(string name)
-        {
-            User returned = usersDAO.GetByName(name);
-            return returned;
-        }
-        
-        public void RemoveUser(User user)
-        {
-            usersDAO.Delete(user.ID);
-        }
     }
 }

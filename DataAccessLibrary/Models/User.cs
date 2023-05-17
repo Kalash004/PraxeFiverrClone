@@ -18,9 +18,9 @@ namespace DataAccessLibrary.Models
 
         public User(string name, string hashedPassword, int currentCredits)
         {
-            this.name = name;
-            this.hashedPassword = hashedPassword;
-            this.currentCredits = currentCredits;
+            Name = name;
+            HashedPassword = hashedPassword;
+            CurrentCredits = currentCredits;
         }
 
         public User(int iD, string name, string hashedPassword, int currentCredits)
@@ -31,11 +31,18 @@ namespace DataAccessLibrary.Models
             CurrentCredits = currentCredits;
         }
 
+        public User(string name, string hashedPassword)
+        {
+            Name = name;
+            HashedPassword = hashedPassword;
+            CurrentCredits = 0;
+        }
+
         public int ID { get { return id; } set { this.id = value; } }
         public string Name { get => name; set => name = value; }
         public string HashedPassword { get => hashedPassword; set => hashedPassword = value; }
         public int CurrentCredits { get => currentCredits; set => currentCredits = value; }
-    
-    
+
+
     }
 }
